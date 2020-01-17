@@ -1,5 +1,7 @@
 # stripe-exports
 
+!["Stripe Exports by Circleboom"](https://repository-images.githubusercontent.com/234569929/61297680-3922-11ea-84ce-edb40f8d768d)
+
 ## Table of Contents
 
 - [About](#about)
@@ -77,6 +79,7 @@ node subscribers -e prod -l 500 -s active
 ## Todo<a name = "todo"></a>
 
 - Improve mapping of some customers data by honoring rate-limits
+- Fields selection
 - Download all customers with customers.js
 
 
