@@ -1,0 +1,24 @@
+{
+    "name": "stripe-subscribers",
+    "version": "0.2.5",
+    "description": "A NodeJS project to download and export some subscribers & customer data from Stripe",
+    "main": "subscribers.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified yet\" && exit 1"
+    },
+    "keywords": [
+        "circleboom",
+        "stripe",
+        "subscriptions",
+        "customers",
+        "stripe api"
+    ],
+    "author": "Atakan Eser <atakan@circleboom.com>",
+    "license": "MIT",
+    "dependencies": {
+        "convert-array-to-csv": "^1.0.9",
+        "moment": "^2.24.0",
+        "stripe": "^8.1.0",
+        "yargs": "^15.1.0"
+    }
+}

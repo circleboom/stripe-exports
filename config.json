@@ -1,0 +1,8 @@
+{
+    "dev": {
+        "stripe_key": "YOUR_STRIPE_DEV_KEY see https://dashboard.stripe.com/account/apikeys"
+    },
+    "prod": {
+        "stripe_key": "YOUR_STRIPE_LIVE_KEY see https://dashboard.stripe.com/account/apikeys"
+    }
+}
