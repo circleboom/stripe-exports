@@ -55,7 +55,7 @@ node subscribers --help
 |-s, --status|  (optional) The status of the subscriptions to retrieve. [choices: "all", "active", "canceled", "incomplete", "incomplete_expired", "trialing", "past_due", "unpaid"]|
 |-l, --limit|(optional) A limit on the number of objects to be returned. The default is 100.|
 
-*Download active 500 subscribers from Live data.*
+### Download active 500 subscribers from Live data. ###
 ```bash
 node subscribers -e prod -l 500 -s active
 
