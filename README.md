@@ -19,6 +19,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+Install dependencies via npm
+
 ```bash
 npm i
 ```
@@ -27,7 +29,7 @@ npm i
 
 Before start you need to update Stripe keys in config.json with yours. Go grab your keys here: https://dashboard.stripe.com/account/apikeys
 
-```
+```json
 {
     "dev": {
         "stripe_key": "YOUR_STRIPE_DEV_KEY"
@@ -72,7 +74,7 @@ node subscribers -e prod -l 500 -s active
 ==> [11:13:36.884] (◕‿◕) I'm done here, bye bye...
 ```
 
-## Todo<a name = "todo"></a>>
+## Todo<a name = "todo"></a>
 
 - Improve mapping of some customers data by honoring rate-limits
 - Download all customers with customers.js
