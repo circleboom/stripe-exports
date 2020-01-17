@@ -5,8 +5,11 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Usage](#usage)
+- [Todo](#todo)
+- [About Circleboom](#circleboom)
+- [Contact Us](https://circleboom.com/contact-us)
 
-## About <a name = "about"></a>
+## About<a name = "about"></a>
 
 Stripe-Exports helps you download and export subscriber &amp; customer data from your Stripe account.
 
@@ -53,4 +56,29 @@ node subscribers --help
 *Download active 500 subscribers from Live data.*
 ```bash
 node subscribers -e prod -l 500 -s active
+
+==> [11:13:27.519] Using the prod as config
+==> [11:13:27.587] Stripe initialized with the prod token
+==> [11:13:27.591] Starting to download all subscribers for in "active" statuses
+==> [11:13:27.591] Getting the page 1 with 100 records 
+==> [11:13:29.493] Getting the page 2 with 100 records after subscription: sub_Gabcdefghijklm
+==> [11:13:31.166] Getting the page 3 with 100 records after subscription: sub_Gabcdefghijkln
+==> [11:13:32.733] Getting the page 4 with 100 records after subscription: sub_Gabcdefghijkl0
+==> [11:13:35.486] Getting the page 5 with 100 records after subscription: sub_Gabcdefghijklp
+==> [11:13:36.874] Total subscribers: 500
+==> [11:13:36.874] Mapping &  stripping subscribers data to fit custom objects
+==> [11:13:36.878] Total 500 records mapped
+==> [11:13:36.884] All subscribers data is saved as subscribers.csv
+==> [11:13:36.884] (◕‿◕) I'm done here, bye bye...
 ```
+
+## Todo<a name = "todo"></a>>
+
+- Improve mapping of some customers data by honoring rate-limits
+- Download all customers with customers.js
+
+
+## About Circleboom<a name = "circleboom"></a>
+
+[Circleboom](https://circleboom.com) is a "Social Media Management" tool which enables users, brands, and SMBs to grow and strengthen their social network. As we're on our road to become a Multi Social Account Management tool, currently we primarily focus on Twitter and create sophisticated yet easy to use tools for it.
+
