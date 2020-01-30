@@ -55,8 +55,8 @@ node subscribers --help
 |-c, --config | Path for the config file. Default is ./config.json. Don't forget to see [your keys here](https://dashboard.stripe.com/account/apikeys)|
 |-e, --env|Choose your environment. This loads environment data from config.json [choices: "dev", "test", "prod"]|
 |-s, --status|(optional) The status of the subscriptions to retrieve. [choices: "all", "active", "canceled", "incomplete", "incomplete_expired", "trialing", "past_due", "unpaid"]|
-|-b, -before|(optional) Gets the previous pages before the given subscription.|
-|-a, -after|(optional) Gets the pages after the given subscription.|
+|-b, --before|(optional) Gets the previous pages before the given subscription.|
+|-a, --after|(optional) Gets the pages after the given subscription.|
 |-l, --limit|(optional) A limit on the number of objects to be returned. The default is 100.|
 
 ### Download active 500 subscribers from Live data. ###
