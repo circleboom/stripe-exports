@@ -52,7 +52,9 @@ node subscribers --help
 | ------ | ----------- |
 |-c, --config | Path for the config file. Default is ./config.json. Don't forget to see [your keys here](https://dashboard.stripe.com/account/apikeys)|
 |-e, --env|Choose your environment. This loads environment data from config.json [choices: "dev", "test", "prod"]|
-|-s, --status|  (optional) The status of the subscriptions to retrieve. [choices: "all", "active", "canceled", "incomplete", "incomplete_expired", "trialing", "past_due", "unpaid"]|
+|-s, --status|(optional) The status of the subscriptions to retrieve. [choices: "all", "active", "canceled", "incomplete", "incomplete_expired", "trialing", "past_due", "unpaid"]|
+|-b, -before|(optional) Gets the previous pages before the given subscription.|
+|-a, -after|(optional) Gets the pages after the given subscription.|
 |-l, --limit|(optional) A limit on the number of objects to be returned. The default is 100.|
 
 ### Download active 500 subscribers from Live data. ###
@@ -68,7 +70,7 @@ node subscribers -e prod -l 500 -s active
 ==> [11:13:32.733] Getting the page 4 with 100 records after subscription: sub_Gabcdefghijkl0
 ==> [11:13:35.486] Getting the page 5 with 100 records after subscription: sub_Gabcdefghijklp
 ==> [11:13:36.874] Total subscribers: 500
-==> [11:13:36.874] Mapping &  stripping subscribers data to fit custom objects
+==> [11:13:36.874] Mapping & stripping subscribers data to fit custom objects
 ==> [11:13:36.878] Total 500 records mapped
 ==> [11:13:36.884] All subscribers data is saved as subscribers.csv
 ==> [11:13:36.884] (◕‿◕) I'm done here, bye bye...
