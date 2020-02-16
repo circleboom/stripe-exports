@@ -59,8 +59,8 @@ if (endingBefore != null && startingAfter !== null) {
 async function getAllSubscribers() {
 
     // Get Subscribers
-    const cursorAt = (startingAfter != null) ? startingAfter : endingBefore;
-    const cursorDirection = (startingAfter != null) ? 'after' : 'before';
+    const cursorAt = (startingAfter != null) ? startingAfter : (endingBefore != null) ? endingBefore : null;
+    const cursorDirection = (startingAfter != null) ? 'after' : (endingBefore != null) ? 'before' : 'after';
     const subscribers = await getSubscribers(cursorAt, cursorDirection);
 
     // Re
@@ -87,7 +87,6 @@ function sleep(ms) {
 // Get subscribers by page
 function getSubscribers(cursorAt, cursorDirection) {
     const getPage = async function(cursorAt, cursorDirection) {
-
             page++;
             if (maxPages && page > maxPages) return;
 
@@ -111,7 +110,7 @@ function getSubscribers(cursorAt, cursorDirection) {
             return stripe.subscriptions.list(searchOptions)
             .then(
                 resolve => resolve.has_more ?
-                getPage(resolve.data[resolve.data.length - 1].id).then(result =>
+                getPage(resolve.data[resolve.data.length - 1].id,cursorDirection).then(result =>
                     resolve.data.concat('', result)
                     ) :
                     resolve.data
