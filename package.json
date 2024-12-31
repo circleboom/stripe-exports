@@ -19,6 +19,6 @@
         "convert-array-to-csv": "^1.0.9",
         "moment": "^2.24.0",
         "stripe": "^8.1.0",
-        "yargs": "^15.1.0"
+        "yargs": "^15.4.1"
     }
 }
